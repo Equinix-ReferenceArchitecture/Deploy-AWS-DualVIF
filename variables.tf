@@ -76,3 +76,14 @@ variable workspaceforDualDGW-Parent {
   type        = string
 }
 
+
+variable "primary_aws_region" {
+  description = "This is the aws primary region"
+  type = string
+}
+
+variable "secondary_aws_region" {
+  description = "This is the aws primary region"
+  type = string
+}
+
