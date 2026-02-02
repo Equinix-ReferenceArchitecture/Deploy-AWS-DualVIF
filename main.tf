@@ -51,7 +51,8 @@ resource "aws_dx_transit_virtual_interface" "VIF_2" {
   amazon_address = var.amazonsideip_2
   customer_address = var.customersideip_2
   bgp_auth_key = var.bgpMD5key
-  provider = aws.ap-east-1  # specify the aws region of the second vif if trying to deploy dual VIF in separate region
+  /*provider = aws.ap-east-1 */
+  provider = aws.secondary # specify the aws region of the second vif if trying to deploy dual VIF in separate region
 }
 
 
